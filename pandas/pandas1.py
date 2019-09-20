@@ -103,4 +103,25 @@ iloc = df.iloc[[1, 2, 4], [0, 2]]
 
 # 获取第1到第3行
 iloc = df.iloc[1:3, :]
-print(iloc)
+#print(iloc)
+
+# 获取所有行的 1到3 列
+iloc = df.iloc[:, 1:3]
+#print(iloc)
+
+# 获取第一行第一列的值
+iloc= df.iloc[1, 1]
+#print(iloc)
+
+# 获取第一行第一列的值
+iat = df.iat[1, 1]
+#print(iat)
+
+# 显示列A中大于0的行
+tmp = df[df.A > 0]
+#print(tmp)
+
+# 显示df中值大于0的，小于0的用NaN表示
+tmp = df[df > 0]
+#print(tmp)
+
